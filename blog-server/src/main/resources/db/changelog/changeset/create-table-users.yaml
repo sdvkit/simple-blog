@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1677249481578-2
+      author: nikitasudaev (generated)
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: users_pkey
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: username
+                  type: VARCHAR(100)
+              - column:
+                  name: email
+                  type: VARCHAR(100)
+              - column:
+                  name: password
+                  type: VARCHAR(250)
+              - column:
+                  name: avatar_url
+                  type: VARCHAR(250)
+            tableName: users

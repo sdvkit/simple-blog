@@ -1,0 +1,66 @@
+[
+  {
+    "id" : 1,
+    "author": "Nikita",
+    "name": "Nikita's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun9-14.userapi.com/impg/WmDWqYL258jJIbnRGTh4SUn1X4sbSfpyfLZ4rg/gyAFkJ8wTOU.jpg?size=811x1080&quality=95&sign=a550dded4c82c5384e70441d0e8a00c7&type=album"
+  },
+  {
+    "id" : 2,
+    "author": "Artem",
+    "name": "Artem's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun1.ncot-by-minsk.userapi.com/impg/mSRqq7ItTWSP3VYHMBn57QeCe1t-Wpc0wser2A/iffKYe-acC4.jpg?size=1280x960&quality=95&sign=9504412a7b5c9d5ae416d090273abf87&type=album"
+  },
+  {
+    "id" : 3,
+    "author": "Nikita",
+    "name": "Nikita's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun9-14.userapi.com/impg/WmDWqYL258jJIbnRGTh4SUn1X4sbSfpyfLZ4rg/gyAFkJ8wTOU.jpg?size=811x1080&quality=95&sign=a550dded4c82c5384e70441d0e8a00c7&type=album"
+  },
+  {
+    "id" : 4,
+    "author": "Artem",
+    "name": "Artem's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun1.ncot-by-minsk.userapi.com/impg/mSRqq7ItTWSP3VYHMBn57QeCe1t-Wpc0wser2A/iffKYe-acC4.jpg?size=1280x960&quality=95&sign=9504412a7b5c9d5ae416d090273abf87&type=album"
+  },
+  {
+    "id" : 5,
+    "author": "Nikita",
+    "name": "Nikita's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun9-14.userapi.com/impg/WmDWqYL258jJIbnRGTh4SUn1X4sbSfpyfLZ4rg/gyAFkJ8wTOU.jpg?size=811x1080&quality=95&sign=a550dded4c82c5384e70441d0e8a00c7&type=album"
+  },
+  {
+    "id" : 6,
+    "author": "Artem",
+    "name": "Artem's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun1.ncot-by-minsk.userapi.com/impg/mSRqq7ItTWSP3VYHMBn57QeCe1t-Wpc0wser2A/iffKYe-acC4.jpg?size=1280x960&quality=95&sign=9504412a7b5c9d5ae416d090273abf87&type=album"
+  },
+  {
+    "id" : 7,
+    "author": "Nikita",
+    "name": "Nikita's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun9-14.userapi.com/impg/WmDWqYL258jJIbnRGTh4SUn1X4sbSfpyfLZ4rg/gyAFkJ8wTOU.jpg?size=811x1080&quality=95&sign=a550dded4c82c5384e70441d0e8a00c7&type=album"
+  },
+  {
+    "id" : 8,
+    "author": "Artem",
+    "name": "Artem's post",
+    "date": "15/10/2020 10:30",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aut quidem tempora totam veniam vitae voluptatem? Animi distinctio eaque numquam odio provident quaerat quasi quia rerum similique ut? Ex.",
+    "icon": "https://sun1.ncot-by-minsk.userapi.com/impg/mSRqq7ItTWSP3VYHMBn57QeCe1t-Wpc0wser2A/iffKYe-acC4.jpg?size=1280x960&quality=95&sign=9504412a7b5c9d5ae416d090273abf87&type=album"
+  }
+]
