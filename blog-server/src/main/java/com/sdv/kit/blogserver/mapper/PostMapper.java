@@ -10,7 +10,6 @@ import org.mapstruct.ReportingPolicy;
 
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE, componentModel = "spring")
 public interface PostMapper {
-
     Post toEntity(PostDto postDto);
 
     PostDto toDto(Post post);

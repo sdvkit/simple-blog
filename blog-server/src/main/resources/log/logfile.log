@@ -1,0 +1,152 @@
+2023-02-28T23:10:16.545+03:00  INFO 56373 --- [main] c.s.k.blogserver.BlogServerApplication   : Starting BlogServerApplication using Java 17.0.5 with PID 56373 (/Users/nikitasudaev/Odedka/blog/blog-server/build/classes/java/main started by nikitasudaev in /Users/nikitasudaev/Odedka/blog/blog-server)
+2023-02-28T23:10:16.559+03:00  INFO 56373 --- [main] c.s.k.blogserver.BlogServerApplication   : The following 1 profile is active: "dev"
+2023-02-28T23:10:17.966+03:00  INFO 56373 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-28T23:10:18.096+03:00  INFO 56373 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 2 JPA repository interfaces.
+2023-02-28T23:10:19.171+03:00  INFO 56373 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-28T23:10:19.197+03:00  INFO 56373 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28T23:10:19.197+03:00  INFO 56373 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-28T23:10:19.368+03:00  INFO 56373 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28T23:10:19.369+03:00  INFO 56373 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2644 ms
+2023-02-28T23:10:19.721+03:00  INFO 56373 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28T23:10:20.531+03:00  INFO 56373 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a140ce5
+2023-02-28T23:10:20.534+03:00  INFO 56373 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28T23:10:26.077+03:00  INFO 56373 --- [main] liquibase.database                       : Set default schema name to public
+2023-02-28T23:10:26.319+03:00  INFO 56373 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28T23:10:26.820+03:00  INFO 56373 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-02-28T23:10:26.947+03:00  INFO 56373 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28T23:10:27.212+03:00  INFO 56373 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-28T23:10:27.347+03:00  INFO 56373 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-02-28T23:10:28.085+03:00  INFO 56373 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-28T23:10:29.758+03:00  INFO 56373 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-28T23:10:29.777+03:00  INFO 56373 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:10:31.578+03:00  WARN 56373 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-28T23:10:33.163+03:00  INFO 56373 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23acd55e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eaf3dd0, org.springframework.security.web.context.SecurityContextHolderFilter@6f45a2fd, org.springframework.security.web.header.HeaderWriterFilter@4f5d587c, org.springframework.security.web.authentication.logout.LogoutFilter@6aa7d7a0, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@50508ed3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1027cdcd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2926144f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5add0cc0, org.springframework.security.web.session.SessionManagementFilter@6a4c4261, org.springframework.security.web.access.ExceptionTranslationFilter@46c28400, org.springframework.security.web.access.intercept.AuthorizationFilter@54632794]
+2023-02-28T23:10:33.674+03:00  INFO 56373 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-28T23:10:33.686+03:00  INFO 56373 --- [main] c.s.k.blogserver.BlogServerApplication   : Started BlogServerApplication in 18.037 seconds (process running for 26.127)
+2023-02-28T23:14:27.052+03:00  INFO 56373 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-28T23:14:27.062+03:00  INFO 56373 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-28T23:14:27.081+03:00  INFO 56373 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2023-02-28T23:17:22.075+03:00  INFO 56373 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:17:22.131+03:00  INFO 56373 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28T23:17:22.146+03:00  INFO 56373 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28T23:17:37.463+03:00  INFO 57075 --- [main] c.s.k.blogserver.BlogServerApplication   : Starting BlogServerApplication using Java 17.0.5 with PID 57075 (/Users/nikitasudaev/Odedka/blog/blog-server/build/classes/java/main started by nikitasudaev in /Users/nikitasudaev/Odedka/blog/blog-server)
+2023-02-28T23:17:37.468+03:00  INFO 57075 --- [main] c.s.k.blogserver.BlogServerApplication   : The following 1 profile is active: "dev"
+2023-02-28T23:17:38.773+03:00  INFO 57075 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-28T23:17:38.918+03:00  INFO 57075 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 2 JPA repository interfaces.
+2023-02-28T23:17:39.983+03:00  INFO 57075 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-28T23:17:40.004+03:00  INFO 57075 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28T23:17:40.006+03:00  INFO 57075 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-28T23:17:40.328+03:00  INFO 57075 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28T23:17:40.329+03:00  INFO 57075 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2755 ms
+2023-02-28T23:17:40.584+03:00  INFO 57075 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28T23:17:41.121+03:00  INFO 57075 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@188a5fc2
+2023-02-28T23:17:41.125+03:00  INFO 57075 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28T23:17:46.614+03:00  INFO 57075 --- [main] liquibase.database                       : Set default schema name to public
+2023-02-28T23:17:46.832+03:00  INFO 57075 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28T23:17:47.318+03:00  INFO 57075 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-02-28T23:17:47.446+03:00  INFO 57075 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28T23:17:47.697+03:00  INFO 57075 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-28T23:17:47.819+03:00  INFO 57075 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-02-28T23:17:48.621+03:00  INFO 57075 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-28T23:17:50.340+03:00  INFO 57075 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-28T23:17:50.374+03:00  INFO 57075 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:17:51.534+03:00  WARN 57075 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-28T23:17:54.157+03:00  INFO 57075 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a66949a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57e83608, org.springframework.security.web.context.SecurityContextHolderFilter@539570b8, org.springframework.security.web.header.HeaderWriterFilter@5444c63f, org.springframework.security.web.authentication.logout.LogoutFilter@6f45a2fd, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@12d24c43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5702e6f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c65a7fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57d8d8e2, org.springframework.security.web.session.SessionManagementFilter@7a087132, org.springframework.security.web.access.ExceptionTranslationFilter@106e6dfe, org.springframework.security.web.access.intercept.AuthorizationFilter@63893cf6]
+2023-02-28T23:17:55.407+03:00  INFO 57075 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-28T23:17:55.442+03:00  INFO 57075 --- [main] c.s.k.blogserver.BlogServerApplication   : Started BlogServerApplication in 18.896 seconds (process running for 25.772)
+2023-02-28T23:18:17.191+03:00  INFO 57075 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-28T23:18:17.195+03:00  INFO 57075 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-28T23:18:17.219+03:00  INFO 57075 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2023-02-28T23:19:23.853+03:00  INFO 57243 --- [main] c.s.k.blogserver.BlogServerApplication   : Starting BlogServerApplication using Java 17.0.5 with PID 57243 (/Users/nikitasudaev/Odedka/blog/blog-server/build/classes/java/main started by nikitasudaev in /Users/nikitasudaev/Odedka/blog/blog-server)
+2023-02-28T23:19:23.857+03:00  INFO 57243 --- [main] c.s.k.blogserver.BlogServerApplication   : The following 1 profile is active: "dev"
+2023-02-28T23:19:25.728+03:00  INFO 57243 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-28T23:19:25.885+03:00  INFO 57243 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.
+2023-02-28T23:19:27.266+03:00  INFO 57243 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-28T23:19:27.290+03:00  INFO 57243 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28T23:19:27.291+03:00  INFO 57243 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-28T23:19:27.452+03:00  INFO 57243 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28T23:19:27.453+03:00  INFO 57243 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3467 ms
+2023-02-28T23:19:27.701+03:00  INFO 57243 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28T23:19:28.063+03:00  INFO 57243 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@188a5fc2
+2023-02-28T23:19:28.066+03:00  INFO 57243 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28T23:19:33.375+03:00  INFO 57243 --- [main] liquibase.database                       : Set default schema name to public
+2023-02-28T23:19:33.559+03:00  INFO 57243 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28T23:19:34.083+03:00  INFO 57243 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-02-28T23:19:34.217+03:00  INFO 57243 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28T23:19:34.452+03:00  INFO 57243 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-28T23:19:34.562+03:00  INFO 57243 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-02-28T23:19:35.466+03:00  INFO 57243 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-28T23:19:37.097+03:00  INFO 57243 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-28T23:19:37.116+03:00  INFO 57243 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:19:38.483+03:00  WARN 57243 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-28T23:19:39.986+03:00  INFO 57243 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a66949a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57e83608, org.springframework.security.web.context.SecurityContextHolderFilter@539570b8, org.springframework.security.web.header.HeaderWriterFilter@5444c63f, org.springframework.security.web.authentication.logout.LogoutFilter@6f45a2fd, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@12d24c43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5702e6f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c65a7fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57d8d8e2, org.springframework.security.web.session.SessionManagementFilter@7a087132, org.springframework.security.web.access.ExceptionTranslationFilter@106e6dfe, org.springframework.security.web.access.intercept.AuthorizationFilter@63893cf6]
+2023-02-28T23:19:40.494+03:00  INFO 57243 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-28T23:19:40.506+03:00  INFO 57243 --- [main] c.s.k.blogserver.BlogServerApplication   : Started BlogServerApplication in 17.695 seconds (process running for 25.199)
+2023-02-28T23:19:45.995+03:00  INFO 57243 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-28T23:19:46.001+03:00  INFO 57243 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-28T23:19:46.022+03:00  INFO 57243 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2023-02-28T23:20:12.488+03:00  INFO 57243 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:20:12.511+03:00  INFO 57243 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28T23:20:12.527+03:00  INFO 57243 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28T23:21:17.072+03:00  INFO 57407 --- [main] c.s.k.blogserver.BlogServerApplication   : Starting BlogServerApplication using Java 17.0.5 with PID 57407 (/Users/nikitasudaev/Odedka/blog/blog-server/build/classes/java/main started by nikitasudaev in /Users/nikitasudaev/Odedka/blog/blog-server)
+2023-02-28T23:21:17.076+03:00  INFO 57407 --- [main] c.s.k.blogserver.BlogServerApplication   : The following 1 profile is active: "dev"
+2023-02-28T23:21:18.393+03:00  INFO 57407 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-28T23:21:18.529+03:00  INFO 57407 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 2 JPA repository interfaces.
+2023-02-28T23:21:19.854+03:00  INFO 57407 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-28T23:21:19.878+03:00  INFO 57407 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28T23:21:19.878+03:00  INFO 57407 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-28T23:21:20.024+03:00  INFO 57407 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28T23:21:20.025+03:00  INFO 57407 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2801 ms
+2023-02-28T23:21:20.311+03:00  INFO 57407 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28T23:21:20.648+03:00  INFO 57407 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cbc1dde
+2023-02-28T23:21:20.650+03:00  INFO 57407 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28T23:21:25.953+03:00  INFO 57407 --- [main] liquibase.database                       : Set default schema name to public
+2023-02-28T23:21:26.132+03:00  INFO 57407 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28T23:21:26.724+03:00  INFO 57407 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-02-28T23:21:26.861+03:00  INFO 57407 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28T23:21:27.053+03:00  INFO 57407 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-28T23:21:27.170+03:00  INFO 57407 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-02-28T23:21:27.856+03:00  INFO 57407 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-28T23:21:29.266+03:00  INFO 57407 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-28T23:21:29.287+03:00  INFO 57407 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:21:30.333+03:00  WARN 57407 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-28T23:21:31.756+03:00  INFO 57407 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d2ca3a9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b26d289, org.springframework.security.web.context.SecurityContextHolderFilter@7a925ac4, org.springframework.security.web.header.HeaderWriterFilter@59456e1, org.springframework.security.web.authentication.logout.LogoutFilter@63893cf6, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@6aa7d7a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29f72685, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c28400, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f680a9a, org.springframework.security.web.session.SessionManagementFilter@6c65a7fc, org.springframework.security.web.access.ExceptionTranslationFilter@59fa5a39, org.springframework.security.web.access.intercept.AuthorizationFilter@31d51518]
+2023-02-28T23:21:32.201+03:00  INFO 57407 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-28T23:21:32.214+03:00  INFO 57407 --- [main] c.s.k.blogserver.BlogServerApplication   : Started BlogServerApplication in 15.981 seconds (process running for 22.486)
+2023-02-28T23:21:38.594+03:00  INFO 57407 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-28T23:21:38.604+03:00  INFO 57407 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-28T23:21:38.623+03:00  INFO 57407 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2023-02-28T23:22:26.739+03:00  INFO 57407 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:22:26.751+03:00  INFO 57407 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28T23:22:26.762+03:00  INFO 57407 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-28T23:26:03.436+03:00  INFO 57731 --- [main] c.s.k.blogserver.BlogServerApplication   : Starting BlogServerApplication using Java 17.0.5 with PID 57731 (/Users/nikitasudaev/Odedka/blog/blog-server/build/classes/java/main started by nikitasudaev in /Users/nikitasudaev/Odedka/blog/blog-server)
+2023-02-28T23:26:03.441+03:00  INFO 57731 --- [main] c.s.k.blogserver.BlogServerApplication   : The following 1 profile is active: "dev"
+2023-02-28T23:26:04.662+03:00  INFO 57731 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-28T23:26:04.796+03:00  INFO 57731 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 2 JPA repository interfaces.
+2023-02-28T23:26:05.781+03:00  INFO 57731 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-28T23:26:05.804+03:00  INFO 57731 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-28T23:26:05.805+03:00  INFO 57731 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-28T23:26:05.943+03:00  INFO 57731 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-28T23:26:05.945+03:00  INFO 57731 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2417 ms
+2023-02-28T23:26:06.184+03:00  INFO 57731 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-28T23:26:06.513+03:00  INFO 57731 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@188a5fc2
+2023-02-28T23:26:06.516+03:00  INFO 57731 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-28T23:26:06.801+03:00  INFO 57731 --- [main] liquibase.database                       : Set default schema name to public
+2023-02-28T23:26:06.968+03:00  INFO 57731 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-28T23:26:07.373+03:00  INFO 57731 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-02-28T23:26:07.491+03:00  INFO 57731 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-02-28T23:26:07.654+03:00  INFO 57731 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-28T23:26:07.769+03:00  INFO 57731 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-02-28T23:26:08.451+03:00  INFO 57731 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-28T23:26:09.984+03:00  INFO 57731 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-28T23:26:10.002+03:00  INFO 57731 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:26:10.479+03:00  WARN 57731 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-28T23:26:11.873+03:00  INFO 57731 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b4b02d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dd01876, org.springframework.security.web.context.SecurityContextHolderFilter@71ad1d0b, org.springframework.security.web.header.HeaderWriterFilter@14d7a962, org.springframework.security.web.authentication.logout.LogoutFilter@46c7c593, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@509bf2d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d8c03cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5702e6f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12d24c43, org.springframework.security.web.session.SessionManagementFilter@6dccdc50, org.springframework.security.web.access.ExceptionTranslationFilter@66f88fd3, org.springframework.security.web.access.intercept.AuthorizationFilter@741f8cf]
+2023-02-28T23:26:12.309+03:00  INFO 57731 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-28T23:26:12.322+03:00  INFO 57731 --- [main] c.s.k.blogserver.BlogServerApplication   : Started BlogServerApplication in 9.701 seconds (process running for 16.844)
+2023-02-28T23:26:20.284+03:00  INFO 57731 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-28T23:26:20.288+03:00  INFO 57731 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-28T23:26:20.312+03:00  INFO 57731 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2023-02-28T23:31:13.519+03:00  INFO 57731 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-28T23:31:13.547+03:00  INFO 57731 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-28T23:31:13.566+03:00  INFO 57731 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
