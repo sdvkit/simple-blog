@@ -27,10 +27,11 @@ public class AuthController {
     private final UserService userService;
 
     @PostMapping("/login")
-    public String getToken(@RequestBody UserLoginDto userLoginDto) {
+    public ResponseEntity getToken(@RequestBody UserLoginDto userLoginDto) {
         final Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(userLoginDto.username(), userLoginDto.password()));
-        return tokenService.generateToken(authentication);
+        return ResponseEntity.ok()
+                .body(tokenService.generateToken(authentication));
     }
 
     @PostMapping("/registration")
