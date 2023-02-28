@@ -15,12 +15,20 @@ databaseChangeLog:
                   name: id
                   type: BIGINT
               - column:
+                  constraints:
+                    unique: true
+                    nullable: false
                   name: username
                   type: VARCHAR(100)
               - column:
+                  constraints:
+                    unique: true
+                    nullable: false
                   name: email
                   type: VARCHAR(100)
               - column:
+                  constraints:
+                    nullable: false
                   name: password
                   type: VARCHAR(250)
               - column:

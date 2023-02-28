@@ -32,7 +32,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     private final UserMapper userMapper = Mappers.getMapper(UserMapper.class);
 
-    @Cacheable("users")
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepository.findByUsername(username)
@@ -41,13 +40,19 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Cacheable("users")
+    @Override
+    public UserDto findByUsername(String username) {
+        return userRepository.findByUsername(username)
+                .map(userMapper::toDto)
+                .orElseThrow(() -> new UsernameNotFoundException("User with this username not found"));
+    }
+
+    @Cacheable("users")
     @Transactional
     @Override
     public void registerUser(UserRegistrationDto userRegistrationDto) {
         userRepository.findByUsernameOrEmail(userRegistrationDto.username(), userRegistrationDto.email())
-                .ifPresent(user -> {
-                    throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User with this username or email already exists");
-                });
+                .ifPresent(user -> { throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User with this username or email already exists"); });
 
         final User user = userMapper.toEntity(userRegistrationDto);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
