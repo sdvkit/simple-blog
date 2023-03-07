@@ -55,7 +55,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
                 .ifPresent(user -> { throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User with this username or email already exists"); });
 
         final User user = userMapper.toEntity(userRegistrationDto);
-        System.out.println("-----------" + user.getUsername() + " - " + user.getPassword());
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
     }

@@ -35,11 +35,11 @@ class TokenServiceImplTests {
 
     @Test
     void generateToken_returnsValidJwtToken() {
-        Authentication authentication = new UsernamePasswordAuthenticationToken("testuser", "password");
-        Instant instantNow = Instant.now();
-        Instant instantExpiration = instantNow.plus(10, ChronoUnit.DAYS);
+        final Authentication authentication = new UsernamePasswordAuthenticationToken("testuser", "password");
+        final Instant instantNow = Instant.now();
+        final Instant instantExpiration = instantNow.plus(10, ChronoUnit.DAYS);
 
-        Jwt expectedJwt = Jwt.withTokenValue("test-jwt-token")
+        final Jwt expectedJwt = Jwt.withTokenValue("test-jwt-token")
                 .header("typ", "JWT")
                 .claim("iss", "sdvkit")
                 .claim("sub", "testuser")
@@ -49,7 +49,7 @@ class TokenServiceImplTests {
 
         when(jwtEncoder.encode(any())).thenReturn(expectedJwt);
 
-        String actualJwtToken = tokenService.generateToken(authentication);
+        final String actualJwtToken = tokenService.generateToken(authentication);
 
         verify(jwtEncoder).encode(any());
 

@@ -40,7 +40,7 @@ class PostServiceImplTests {
 
     @BeforeEach
     void setUpResources() {
-        User user = User.builder()
+        final User user = User.builder()
                 .id(1L)
                 .username("Mikola")
                 .password(passwordEncoder.encode("roottoor"))
@@ -66,7 +66,7 @@ class PostServiceImplTests {
 
     @Test
     void testFindAll() {
-        List<Post> actualPosts = mapDtosToEntities(postService.findAll());
+        final List<Post> actualPosts = mapDtosToEntities(postService.findAll());
 
         for (int i = 0; i < posts.size(); i++) {
             assertEquals(posts.get(i).getId(), actualPosts.get(i).getId());
@@ -75,7 +75,7 @@ class PostServiceImplTests {
 
     @Test
     void testFindAllByUser() {
-        List<Post> actualPosts = mapDtosToEntities(postService.findAllByUser("Mikola"));
+        final List<Post> actualPosts = mapDtosToEntities(postService.findAllByUser("Mikola"));
 
         for (int i = 0; i < posts.size(); i++) {
             assertEquals(posts.get(i).getId(), actualPosts.get(i).getId());

@@ -12,11 +12,11 @@ services:
     depends_on:
       - db
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/blog
-      - SPRING_DATASOURCE_USERNAME=sdvkit
-      - SPRING_DATASOURCE_PASSWORD=sdvkit-roottoor
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=none
-
+      - SPRING_PROFILES_ACTIVE=prod
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/blog
+#      - SPRING_DATASOURCE_USERNAME=sdvkit
+#      - SPRING_DATASOURCE_PASSWORD=sdvkit-roottoor
+#      - SPRING_JPA_HIBERNATE_DDL_AUTO=none
   db:
     image: 'postgres:latest'
     container_name: blog-server-db

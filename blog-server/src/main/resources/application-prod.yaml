@@ -1,5 +1,5 @@
 server.port: 8081
-datasource.url: jdbc:postgresql://localhost:5432/blog
+datasource.url: jdbc:postgresql://db:5432/blog
 datasource.username: sdvkit
 datasource.password: sdvkit-roottoor
 datasource.driver: org.postgresql.Driver
