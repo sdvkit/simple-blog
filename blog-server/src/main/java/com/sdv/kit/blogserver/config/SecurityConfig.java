@@ -36,13 +36,20 @@ public class SecurityConfig {
 
     private RSAKey rsaKey;
 
+    private static final String[] AUTH_WHITELIST = {
+            "/api/v1/auth/login",
+            "/api/v1/auth/registration",
+            "/v3/api-docs/**",
+            "/swagger-ui/**"
+    };
+
     @SneakyThrows
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/v1/auth/login", "/api/v1/auth/registration").permitAll()
+                        .requestMatchers(AUTH_WHITELIST).permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))

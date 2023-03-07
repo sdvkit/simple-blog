@@ -15,7 +15,7 @@ databaseChangeLog:
                   name: id
                   type: BIGINT
               - column:
-                  name: name
+                  name: title
                   type: VARCHAR(100)
               - column:
                   name: description

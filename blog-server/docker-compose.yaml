@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  app:
+    image: 'blog-server:latest'
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "8081:8081"
+    container_name: blog-server-app
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/blog
+      - SPRING_DATASOURCE_USERNAME=sdvkit
+      - SPRING_DATASOURCE_PASSWORD=sdvkit-roottoor
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=none
+
+  db:
+    image: 'postgres:latest'
+    container_name: blog-server-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=sdvkit
+      - POSTGRES_PASSWORD=sdvkit-roottoor
+      - POSTGRES_DB=blog
