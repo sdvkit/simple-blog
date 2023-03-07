@@ -1,5 +1,14 @@
-server.port: 8081
-datasource.url: jdbc:postgresql://db:5432/blog
-datasource.username: sdvkit
-datasource.password: sdvkit-roottoor
-datasource.driver: org.postgresql.Driver
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/blog
+    username: sdvkit
+    password: sdvkit-roottoor
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: false
+    hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+  liquibase:
+    enabled: true
+server:
+  port: 8081
+  error.include-message: always

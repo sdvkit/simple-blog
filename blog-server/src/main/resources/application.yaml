@@ -1,17 +1,1 @@
-spring:
-  profiles:
-    active: dev
-  datasource:
-    url: ${datasource.url}
-    username: ${datasource.username}
-    password: ${datasource.password}
-    driver-class-name: ${datasource.driver}
-  jpa:
-    generate-ddl: false
-    hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
-    show-sql: true
-    properties:
-      hibernate.format_sql: true
-server:
-  port: ${server.port}
-  error.include-message: always
+spring.profiles.active: dev
